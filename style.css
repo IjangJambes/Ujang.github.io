@@ -1,0 +1,140 @@
+
+*, html, body {
+	margin: 0px;
+	padding: 0px;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding-left:auto ;
+
+	box-sizing: border-box;
+	scroll-behavior: smooth ;
+}
+
+
+header {
+
+  	background-color: rgba(0,0,0,0.2);
+	color: #726969;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo {
+	margin-right: auto;
+	display: flex;
+	gap: 5px;
+}
+
+.logo-img {
+	width: 200px;
+	height: auto;
+	margin-left:auto;
+}
+
+.logo-title {
+	margin-left: 10px;
+	cursor: pointer;
+	transition: all .5s ease 0s;
+	font-family: Brush script Mt;
+}
+
+.logo:hover {
+	color: #000000;
+	transform: rotate(2deg);
+}
+
+.container {
+    max-width:auto;
+    margin: auto;
+    padding: 150px 0;
+}
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.img-foto {
+	wIdth: 300px;
+	height: 300px;
+	padding: 10px;
+	max-width: 500px;
+	border-radius: 50%
+}
+
+.icon{
+    position: absolute;
+    top: 50;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+
+}
+.tombol{
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    background: #f1f1f1;
+    margin: 5px;
+    border-radius: 50px;
+    box-sizing: 0 5px 15px -5px #00000070;
+    overflow: hidden;
+    position: relative;
+    color: #7f8c8d;
+}
+.tombol i{
+    transition: 0,2s linear;
+    font-size: 26px;
+    line-height: 90px;
+    padding-block-end: none;
+}
+.tombol:hover i{
+    transform: scale(1.3);
+    color: #f1f1f1;
+}
+.tombol::before{
+content:"";
+position: absolute;
+width: 120px;
+height: 120px;
+left: 110%;
+top: 90%;
+transform: rotate(45deg);
+background:#2d3436 ;
+}
+.tombol:hover::before{
+left: -10%;
+top: -10%;
+animation: aaa 0.7s 1;
+}
+
+@keyframes aaa{
+    0%{
+        left: -110%;
+        top: 90%;
+    }
+    50%{
+        left: -10%;
+        top: -30%;
+    }
+    100%{
+        left: -10%;
+        top: -10%;
+    }
+}
+
+footer {
+	padding: 10px;
+	text-align: center;
+	color: #000000;
+	background-color:#726969;
+	background-color: rgba(0,0,0,0.2);
+	margin-top: 190px;
+  font-family: Brush script Mt;
+}
